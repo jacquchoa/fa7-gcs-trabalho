@@ -14,7 +14,7 @@ Histórico de Versões
 
 |Data                |Versão       |Descrição               |Autor          |
 |--------------------|-------------|------------------------|---------------|
-|_&lt;dd/mm/aaaa&gt;_|_&lt;1.0&gt;_|_&lt;Versão inicial&gt;_|_&lt;autor&gt;_|
+|_&lt;09/12/2014&gt;_|_&lt;1.0&gt;_|_&lt;Versão inicial&gt;_|_&lt;Simone Magalhaes&gt;_|
 |_&lt;dd/mm/aaaa&gt;_|_&lt;1.1&gt;_|_&lt;Outra versão&gt;_  |_&lt;autor&gt;_|
 
 
@@ -28,7 +28,7 @@ Plano de Gerenciamento de Configuração.]_
 
 1.1 Finalidade
 ---------------
-_[Especifique a finalidade deste Plano de Gerenciamento de Configuração.]_
+Este Plano de Gerenciamento de Configuração visa definir como, quando e onde deverá ser feita a gestão de configuração e mudança do Projeto Livraria.
 
 1.2 Escopo
 ----------
@@ -53,13 +53,13 @@ _[Esta subseção descreve o conteúdo restante do Plano de Gerenciamento de Con
 
 2.1 Organização, Responsabilidades e Interfaces
 ------------------------------------------------
-_[Descreva quem será o responsável pela execução das diversas atividades de Gerenciamento de Configuração (CM) descritas no Processo de CM.]_
+Responsável pela execução das diversas atividades de Gerenciamento de Configuração (CM) descritas no Processo de CM: Aline, Simone, Jacqueline
 
 2.2 Ferramentas, Ambiente e Infra-estrutura
 -------------------------------------------
-_[Descreva o ambiente de computação e as ferramentas de software a serem utilizadas para desempenhar as funções de CM em todo o ciclo de vida do projeto ou produto._
-_Descreva as ferramentas e os procedimentos necessários utilizados para o controle de versão dos itens de configuração gerados no ciclo de vida do projeto ou produto._
-_As questões envolvidas na configuração do ambiente de CM incluem:_
+_[Descreva o ambiente de computação e as ferramentas de software a serem utilizadas para desempenhar as funções de CM em todo o ciclo de vida do projeto ou produto.]_
+Ferramentas e os procedimentos necessários utilizados para o controle de versão dos itens de configuração gerados no ciclo de vida do projeto ou produto: Controle de versão:  GIT; Gestão de mudanças: Mantis.
+_[As questões envolvidas na configuração do ambiente de CM incluem:_
 * _tamanho previsto dos dados do produto_
 * _distribuição da equipe do produto_
 * _localização física dos servidores e clientes]_
@@ -80,41 +80,60 @@ _[Relacionar os artefatos ou grupos de artefatos, separando por tipo, modulo ou 
 * _“Inclusão em Baseline” em branco significa que o grupo de artefatos não participará de baseline. Pode ser expresso como uma data ou identificador de uma baseline, fase ou ponto de controle_
 * _“Responsável”: indicar nominalmente, sempre que possível]_
 
-| Item (ou Tipo de Item)                 | Responsável na equipe	     | Inclusão em Baseline |
-|----------------------------------------|-----------------------------|----------------------|
-|_&lt;grupo de itens de configuração&gt;_|_&lt;nome do responsável&gt;_|_&lt;momento a partir do qual o conjunto de artefatos será incluído em baseline&gt;_|
-
+| Item (ou Tipo de Item)                           | Responsável na equipe	     | Inclusão em Baseline |
+|--------------------------------------------------|----------------------------|----------------------|
+|_&lt;Artefatos:Regras de Negócio, casos;_ 
+_&lt;de uso, diagramas de análise e projeto,;_
+_&lt;mensagens, regras de validadção, requisitos,;_
+_&lt;casos de teste, plano de projeto, cronograma&gt;_|_&lt;Simone&gt;_|_&lt;baselineartef1.0122014&gt;_|
+                                         
+|_&lt;Código-fonte&gt;_                            |_&lt;Jacqueline&gt;_        |_&lt;baselinecodigo1.0122014&gt;_|
 
 ### 3.1.3 Baselines do Projeto
 
 _[As baselines funcionam como um padrão oficial no qual os trabalhos subseqüentes são baseados. Somente mudanças autorizadas podem ser efetuadas nas baselines._
 _Descreva em que pontos do ciclo de vida do projeto ou produto as baselines devem ser estabelecidas. As baselines mais comuns devem ser definidas ao final de cada uma das fases de Iniciação, Elaboração, Construção e Transição. Elas também podem ser geradas no final de iterações ocorridas dentro das várias fases ou com freqüência ainda maior._
 _Descreva quem autoriza uma baseline e o que ela contém.]_
+baseline_artefVERSAOMESANO - Regras de Negócio, casos de uso, diagramas de análise e projeto, mensagens, regras de validação, requisitos, casos de teste, plano de projeto, cronograma - Autorizado pelo Gestor do Projeto
+baseline_codigoVERSAOMESANO - Código-fonte - Autorizado pelo Gestor do Projeto
 
 ### 3.1.4 Estrutura do Repositório de Versões
 _[Descreva a organização de diretórios do seu repositório e que itens/arquivos devem ser armazenados em cada diretório.]_
+Artefatos > Especificação > Requisitos; Regras de Negócio; Casos de uso; Mensagens; Regras de Validação;
+Artefatos > Especificação > Teste > Casos de teste
+Artefatos > Análise e Projeto > Diagramas de Análise e Projeto (Classe, Sequencia..);
+Artefatos > Projeto > Plano de projeto; Cronograma.
+Código Fonte > Arquivos do sistema (dll, fontes...)
 
 3.2 Controle de Configuração e Mudança
 --------------------------------------
 
 ### 3.2.1 Processamento e Aprovação de Solicitações de Mudança
 _[Descreva o processo pelo qual os problemas e as mudanças são submetidos, revisados e dispostos. Inclua como funciona a transição de estados de uma solicitação de mudança]_
+Ciclo de vida de uma solicitação de mudança: Novo, Atribuído, Em desenvolvimento, resolvido, Testado, Fechado, re-aberto.
+Estrutura do CCB do seu projeto: ??
+
 
 ### 3.2.2 Comitê de Controle de Mudança (CCB)
 _[Descreva a participação e os procedimentos para processar solicitações e aprovações de mudança a serem seguidos pelo CCB. Informe quem são os membros do CCB e suas responsabilidades.]_
-
+Integrantes: Aline, Simone, Jacqueline
 
 
 4. Padrões e Procedimentos
 ==========================
 _[Descreva os padrões e procedimentos que devem ser seguidos no projeto. Crie subseções se achar necessário, para organizá-los melhor.]_
-
+Quando será obrigatório criar: Manutenção de uma versão em produção x trabalho na nova
+versão, Atividade impactante e demorada, Customizações para diferentes.
+clientes ou ambientes
+Padrão para o nome do branch: nomefuncionalidade.0000
+Quem é responsável por criar: GC - Aline
+Quando e por quem o merge deve ser feito - a cada nova entrega ou versão - GC
 
 
 5. Treinamento e Recursos
 =========================
 _[Descreva as ferramentas de software, o pessoal e o treinamento necessários para implementar as atividades de CM especificadas.]_
-
+Ferramentas: GIT, Mantis
 
 
 6. Auditorias de Configuração
