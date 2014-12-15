@@ -30,7 +30,7 @@ Este Plano de Gerenciamento de Configuração visa definir como, quando e onde d
 
 1.2 Escopo
 ----------
-_[Uma breve descrição do escopo deste Plano de Gerenciamento de Configuração; o modelo ao qual ele está associado e tudo o que é afetado ou influenciado por este documento.]_
+O principal objetivo é oferecer subsídios fundamentais que possibilitem o estabelicimento ao conteúdo em meio digital com o propósito de divulgar e promover o acesso universal ás informações, conhecimento e herança cultural. 
 
 1.3 Definições, Acrônimos e Abreviações
 ---------------------------------------
